@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>เกมคณิตศาสตร์ทั่วไป</h1> 
+    <button id="start">เริ่ม</button>
+    <div id="gameSection" style="display: none;">
+        <div class="Score">
+            <p>คะแนน: <span id="score">0</span></p>
+          </div>
+        <button id="start-reset">เริ่ม</button>
+        <p id="question"></p>
+      <input type="number" id="answer" placeholder="Your answer">
+      <div class="checkbox">
+      <label>
+        <input type="checkbox" name="operator" id="add"  value="+">  (+)
+      </label>
+      <label>
+        <input type="checkbox" name="operator" id="remove"  value="-">  (-)
+      </label>
+      <label>
+        <input type="checkbox" name="operator" id="multiply"  value="*">  (*)
+      </label>
+      <label>
+        <input type="checkbox" name="operator" id="divide" value="/"> (/)
+      </label>
+      </div>
+      </select>
+      <button id="submit">ส่งคำตอบ</button>
+      <p id="result"></p>
+    </div>
+  </div>
+</body>
+</html>
